@@ -20,11 +20,11 @@
 - [`cmake`](https://cmake.org/)) — система сборки
 - [`ninja`](https://ninja-build.org/) или [`make`] — генератор сборки
 
-### Установка (Linux mint)
+## Проходы
 
-```bash
-sudo apt update
-sudo apt install llvm clang cmake ninja-build
+- MyPass - взят из примера (https://github.com/LevchenkoDmitriy/llvm-basic-pass), реализует вывод имён функций и количтество их аргументов.
+- RPOPass - меняет для каждой функции наименования у базовых блоков, выводит циклы в CFG графе (без учёта доминирования) и, соотвтественно, сами блоки в RPO нумераци.
+- InstSearchPass — выводит для каждой функции список всех её инструкции с количеством использований в алфавитном порядке.
 ```
 
 ## Быстрый старт
