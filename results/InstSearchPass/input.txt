@@ -1,0 +1,29 @@
+Function name: foo, num Instructions: 5
+	alloca: 1
+	load: 1
+	mul: 1
+	ret: 1
+	store: 1
+Function name: bar, num Instructions: 10
+	add: 1
+	alloca: 2
+	call: 1
+	load: 2
+	mul: 1
+	ret: 1
+	store: 2
+Function name: fez, num Instructions: 16
+	add: 2
+	alloca: 3
+	call: 1
+	load: 4
+	mul: 2
+	ret: 1
+	store: 3
+Function name: main, num Instructions: 29
+	add: 3
+	alloca: 5
+	call: 3
+	load: 9
+	ret: 1
+	store: 8

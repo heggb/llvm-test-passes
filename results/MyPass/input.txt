@@ -1,0 +1,8 @@
+Function name: foo
+    number of arguments: 1
+Function name: bar
+    number of arguments: 2
+Function name: fez
+    number of arguments: 3
+Function name: main
+    number of arguments: 2

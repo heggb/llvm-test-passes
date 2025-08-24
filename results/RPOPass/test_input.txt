@@ -1,0 +1,217 @@
+Function name: boom, size: 1
+
+
+	boom.entry.unreach0
+-------------------------------------------------------------------------------
+Function name: base, size: 3
+
+
+	base.entry.if0.cond
+	base.if0.then.exit0
+	base.if0.else.unreach0
+-------------------------------------------------------------------------------
+Function name: if_merge, size: 4
+
+
+	if_merge.entry.if0.cond
+	if_merge.if0.then.br0
+	if_merge.if0.else.br1
+	if_merge.if0.end.exit0
+-------------------------------------------------------------------------------
+Function name: sw, size: 5
+
+
+	sw.entry.switch0.cond
+	sw.switch0.default.br2
+	sw.switch0.case1.br0
+	sw.switch0.case2.br1
+	sw.exit0
+-------------------------------------------------------------------------------
+Function name: plain_br, size: 2
+
+
+	plain_br.entry.br0
+	plain_br.exit0
+-------------------------------------------------------------------------------
+Function name: cbr, size: 5
+
+
+	cbr.entry.callbr0.dispatch
+	cbr.callbr0.default.br0
+	cbr.callbr0.dest0.br1
+	cbr.callbr0.dest1.br2
+	cbr.exit0
+-------------------------------------------------------------------------------
+Function name: foo, size: 1
+
+
+	foo.entry.exit0
+-------------------------------------------------------------------------------
+Function name: indirect, size: 5
+
+
+	indirect.entry.br0
+	indirect.indirectbr0.dispatch
+	indirect.br1.indirectbr0.dest0
+	indirect.br2.indirectbr0.dest1
+	indirect.exit0
+-------------------------------------------------------------------------------
+Function name: unr, size: 3
+
+
+	unr.entry.if0.cond
+	unr.if0.then.exit0
+	unr.if0.else.unreach0
+-------------------------------------------------------------------------------
+Function name: loop_preheader, size: 5
+
+	Found loop loop_preheader.loop0.latch0.br2->loop_preheader.loop0.header.exit0.if0.cond
+
+	loop_preheader.loop0.preheader.entry.br0
+	loop_preheader.loop0.header.exit0.if0.cond
+	loop_preheader.loop0.body.if0.then.br1
+	loop_preheader.loop0.latch0.br2
+	loop_preheader.loop0.postexit0.end.if0.else.if0.end.exit0
+-------------------------------------------------------------------------------
+Function name: pseudo, size: 8
+
+	Found loop pseudo.loop0.latch0.if1.then.br3->pseudo.loop0.header.exit0.if0.cond
+
+	pseudo.loop0.preheader.entry.br0
+	pseudo.loop0.header.exit0.if0.cond
+	pseudo.loop0.body.if0.then.br1
+	pseudo.loop0.exit1.if1.cond
+	pseudo.loop0.latch0.if1.then.br3
+	pseudo.loop0.postexit1.if1.else.br4
+	pseudo.loop0.postexit0.if0.else.br2
+	pseudo.loop0.end.if0.end.if1.end.exit0
+-------------------------------------------------------------------------------
+Function name: nested, size: 9
+
+	Found loop nested.loop0.latch0.br5->nested.loop0.header.exit0.if0.cond
+	Found loop nested.loop0.loop0.latch0.br3->nested.loop0.loop0.header.exit0.if1.cond
+
+	nested.loop0.preheader.entry.br0
+	nested.loop0.header.exit0.if0.cond
+	nested.loop0.body.loop0.preheader.if0.then.br1
+	nested.loop0.loop0.header.exit0.if1.cond
+	nested.loop0.loop0.body.if1.then.br2
+	nested.loop0.loop0.latch0.br3
+	nested.loop0.loop0.postexit0.end.if1.else.if1.end.br4
+	nested.loop0.latch0.br5
+	nested.loop0.postexit0.end.if0.else.if0.end.exit0
+-------------------------------------------------------------------------------
+Function name: stable, size: 10
+
+
+	stable.entry.if0.cond
+	stable.if0.then.br0
+	stable.if0.else.switch0.cond
+	stable.switch0.default.br2
+	stable.switch0.case1.br1
+	stable.br3
+	stable.if0.end.if1.cond
+	stable.if1.then.br4
+	stable.br5
+	stable.if1.else.if1.end.exit0
+-------------------------------------------------------------------------------
+Function name: auto_bb, size: 4
+
+
+	auto_bb.entry.if0.cond
+	auto_bb.if0.then.br0
+	auto_bb.if0.else.br1
+	auto_bb.if0.end.exit0
+-------------------------------------------------------------------------------
+Function name: island, size: 3
+
+
+	island.unreach0.br1
+	island.entry.br0
+	island.exit0
+-------------------------------------------------------------------------------
+Function name: if_chain, size: 7
+
+
+	if_chain.entry.if0.cond
+	if_chain.if0.then.br0
+	if_chain.if0.else.if1.cond
+	if_chain.if1.then.br1
+	if_chain.if1.else.br2
+	if_chain.if1.end.br3
+	if_chain.if0.end.exit0
+-------------------------------------------------------------------------------
+Function name: if_ret, size: 4
+
+
+	if_ret.entry.if0.cond
+	if_ret.if0.then.br0
+	if_ret.if0.else.br1
+	if_ret.if0.end.exit0
+-------------------------------------------------------------------------------
+Function name: sw_alias, size: 4
+
+
+	sw_alias.entry.switch0.cond
+	sw_alias.switch0.default.br1
+	sw_alias.switch0.case1.case2.case3.br0
+	sw_alias.exit0
+-------------------------------------------------------------------------------
+Function name: sw_nodef, size: 5
+
+
+	sw_nodef.entry.switch0.cond
+	sw_nodef.switch0.default.br2
+	sw_nodef.switch0.case10.br0
+	sw_nodef.switch0.case20.br1
+	sw_nodef.exit0
+-------------------------------------------------------------------------------
+Function name: loop_multi, size: 8
+
+	Found loop loop_multi.loop0.latch0.if2.else.br3->loop_multi.loop0.header.exit0.if0.cond.if2.end
+	Found loop loop_multi.loop0.latch1.if2.then.br2->loop_multi.loop0.header.exit0.if0.cond.if2.end
+
+	loop_multi.loop0.preheader.entry.br0
+	loop_multi.loop0.header.exit0.if0.cond.if2.end
+	loop_multi.loop0.body.exit1.if0.then.if1.cond
+	loop_multi.loop0.postexit1.if1.then.br1
+	loop_multi.if1.else.if2.cond
+	loop_multi.loop0.latch1.if2.then.br2
+	loop_multi.loop0.latch0.if2.else.br3
+	loop_multi.loop0.postexit0.end.if0.else.if0.end.if1.end.exit0
+-------------------------------------------------------------------------------
+Function name: pseudo2, size: 8
+
+	Found loop pseudo2.loop0.latch0.br4->pseudo2.loop0.header.exit0.if1.cond
+
+	pseudo2.entry.if0.cond
+	pseudo2.if0.then.br0
+	pseudo2.if0.else.br1
+	pseudo2.loop0.preheader.if0.end.br2
+	pseudo2.loop0.header.exit0.if1.cond
+	pseudo2.loop0.body.if1.then.br3
+	pseudo2.loop0.latch0.br4
+	pseudo2.loop0.postexit0.end.if1.else.if1.end.exit0
+-------------------------------------------------------------------------------
+Function name: cbr0, size: 4
+
+
+	cbr0.entry.callbr0.dispatch
+	cbr0.callbr0.default.br0
+	cbr0.callbr0.dest0.br1
+	cbr0.exit0
+-------------------------------------------------------------------------------
+Function name: ibr0, size: 1
+
+
+	ibr0.entry.exit0
+-------------------------------------------------------------------------------
+Function name: dead_with_pred, size: 5
+
+
+	dead_with_pred.entry.if0.cond
+	dead_with_pred.if0.then.br0
+	dead_with_pred.br2
+	dead_with_pred.if0.else.br1
+	dead_with_pred.if0.end.exit0
+-------------------------------------------------------------------------------

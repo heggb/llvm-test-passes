@@ -1,0 +1,48 @@
+Function name: boom
+    number of arguments: 0
+Function name: base
+    number of arguments: 1
+Function name: if_merge
+    number of arguments: 1
+Function name: sw
+    number of arguments: 1
+Function name: plain_br
+    number of arguments: 0
+Function name: cbr
+    number of arguments: 1
+Function name: foo
+    number of arguments: 0
+Function name: indirect
+    number of arguments: 1
+Function name: unr
+    number of arguments: 1
+Function name: loop_preheader
+    number of arguments: 1
+Function name: pseudo
+    number of arguments: 1
+Function name: nested
+    number of arguments: 2
+Function name: stable
+    number of arguments: 1
+Function name: auto_bb
+    number of arguments: 1
+Function name: island
+    number of arguments: 0
+Function name: if_chain
+    number of arguments: 1
+Function name: if_ret
+    number of arguments: 1
+Function name: sw_alias
+    number of arguments: 1
+Function name: sw_nodef
+    number of arguments: 1
+Function name: loop_multi
+    number of arguments: 2
+Function name: pseudo2
+    number of arguments: 1
+Function name: cbr0
+    number of arguments: 0
+Function name: ibr0
+    number of arguments: 1
+Function name: dead_with_pred
+    number of arguments: 1

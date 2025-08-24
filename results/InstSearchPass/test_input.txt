@@ -1,0 +1,162 @@
+Function name: boom, num Instructions: 2
+	call: 1
+	unreachable: 1
+Function name: base, num Instructions: 8
+	alloca: 1
+	br: 1
+	call: 1
+	icmp: 1
+	load: 1
+	ret: 1
+	store: 1
+	unreachable: 1
+Function name: if_merge, num Instructions: 8
+	alloca: 1
+	br: 3
+	icmp: 1
+	load: 1
+	ret: 1
+	store: 1
+Function name: sw, num Instructions: 13
+	alloca: 2
+	br: 3
+	load: 2
+	ret: 1
+	store: 4
+	switch: 1
+Function name: plain_br, num Instructions: 2
+	br: 1
+	ret: 1
+Function name: cbr, num Instructions: 9
+	alloca: 1
+	br: 3
+	call: 2
+	callbr: 1
+	ret: 1
+	store: 1
+Function name: foo, num Instructions: 1
+	ret: 1
+Function name: indirect, num Instructions: 16
+	alloca: 2
+	and: 1
+	br: 3
+	getelementptr: 1
+	indirectbr: 1
+	load: 3
+	phi: 1
+	ret: 1
+	sext: 1
+	store: 2
+Function name: unr, num Instructions: 8
+	alloca: 1
+	br: 1
+	call: 1
+	icmp: 1
+	load: 1
+	ret: 1
+	store: 1
+	unreachable: 1
+Function name: loop_preheader, num Instructions: 15
+	add: 1
+	alloca: 2
+	br: 4
+	icmp: 1
+	load: 3
+	ret: 1
+	store: 3
+Function name: pseudo, num Instructions: 16
+	add: 1
+	alloca: 1
+	br: 7
+	icmp: 2
+	load: 2
+	ret: 1
+	store: 2
+Function name: nested, num Instructions: 29
+	add: 2
+	alloca: 4
+	br: 8
+	icmp: 2
+	load: 6
+	ret: 1
+	store: 6
+Function name: stable, num Instructions: 16
+	alloca: 1
+	br: 8
+	icmp: 1
+	load: 3
+	ret: 1
+	store: 1
+	switch: 1
+Function name: auto_bb, num Instructions: 8
+	alloca: 1
+	br: 3
+	icmp: 1
+	load: 1
+	ret: 1
+	store: 1
+Function name: island, num Instructions: 3
+	br: 2
+	ret: 1
+Function name: if_chain, num Instructions: 13
+	alloca: 1
+	br: 6
+	icmp: 2
+	load: 2
+	ret: 1
+	store: 1
+Function name: if_ret, num Instructions: 12
+	alloca: 2
+	br: 3
+	icmp: 1
+	load: 2
+	ret: 1
+	store: 3
+Function name: sw_alias, num Instructions: 12
+	alloca: 2
+	br: 2
+	load: 2
+	ret: 1
+	store: 4
+	switch: 1
+Function name: sw_nodef, num Instructions: 13
+	alloca: 2
+	br: 3
+	load: 2
+	ret: 1
+	store: 4
+	switch: 1
+Function name: loop_multi, num Instructions: 35
+	add: 2
+	alloca: 3
+	br: 7
+	getelementptr: 2
+	icmp: 3
+	load: 10
+	ret: 1
+	sext: 2
+	store: 5
+Function name: pseudo2, num Instructions: 19
+	add: 1
+	alloca: 2
+	br: 7
+	icmp: 2
+	load: 3
+	ret: 1
+	store: 3
+Function name: cbr0, num Instructions: 4
+	br: 2
+	callbr: 1
+	ret: 1
+Function name: ibr0, num Instructions: 4
+	alloca: 1
+	load: 1
+	ret: 1
+	store: 1
+Function name: dead_with_pred, num Instructions: 13
+	alloca: 2
+	br: 4
+	icmp: 1
+	load: 2
+	ret: 1
+	store: 3
